@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Novel Search Interface</title>
-    <!-- Load Tailwind CSS and configure Dark Mode -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Configure Tailwind to use the 'dark' class on the HTML element for dark mode
@@ -19,7 +18,6 @@
             },
         }
     </script>
-    <!-- Use Inter font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
@@ -43,12 +41,9 @@
 
     <div class="max-w-4xl mx-auto bg-white dark:bg-slate-800 p-6 sm:p-10 rounded-3xl shadow-2xl border-t-4 border-indigo-600 transition-colors duration-300">
         
-        <!-- Theme Toggle Button -->
         <div class="flex justify-end mb-4">
             <button id="theme-toggle" class="p-2 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 transition duration-150">
-                <!-- SVG Icon for Sun/Moon will be set by JS -->
                 <svg id="theme-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Default Sun Icon Path (Simple, clear icon) -->
                     <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
                 </svg>
             </button>
@@ -61,92 +56,73 @@
             Filter novels by title, author, summary keywords, and specific genres or tags.
         </p>
 
-        <!-- Main Title Search Bar -->
         <div class="mb-8">
             <label for="novel-title" class="sr-only">Novel Title</label>
             <input type="text" id="novel-title" placeholder="Search by Novel Title..."
-                   class="w-full p-4 border border-slate-300 dark:border-slate-600 rounded-xl text-lg focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-150 shadow-inner dark:bg-slate-700 dark:text-slate-100"
+                    class="w-full p-4 border border-slate-300 dark:border-slate-600 rounded-xl text-lg focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition duration-150 shadow-inner dark:bg-slate-700 dark:text-slate-100"
             >
         </div>
 
-        <!-- Start of Collapsible Advanced Search Sections -->
-
-        <!-- Reusable Accordion Item Structure -->
         <div class="space-y-4">
             
-            <!-- 1. Author Search Dropdown -->
             <div class="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md overflow-hidden">
                 <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-600 transition duration-150"
                         onclick="toggleCollapse('author-content', 'author-icon')">
                     Author
-                    <!-- Icon: Plus/Minus -->
                     <span id="author-icon" class="text-2xl text-indigo-600 transition-transform duration-300 transform rotate-0">+</span>
                 </button>
                 <p class="px-4 text-sm text-slate-500 dark:text-slate-400 pb-2">Search for novels by specific author names or keywords.</p>
-                <!-- FIX: Removed all internal spacing from collapse-content and moved it to an inner wrapper -->
                 <div id="author-content" class="collapse-content"> 
                     <div class="px-4 pb-4">
-                        <input type="text" placeholder="Enter author name keywords..."
+                        <input type="text" id="author-input" placeholder="Enter author name keywords..."
                                class="w-full p-3 border border-slate-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 rounded-lg focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
                         >
                     </div>
                 </div>
             </div>
 
-            <!-- 2. Summary Search Dropdown -->
             <div class="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md overflow-hidden">
                 <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-600 transition duration-150"
                         onclick="toggleCollapse('summary-content', 'summary-icon')">
                     Summary Keywords
-                    <!-- Icon: Plus/Minus -->
                     <span id="summary-icon" class="text-2xl text-indigo-600 transition-transform duration-300 transform rotate-0">+</span>
                 </button>
                 <p class="px-4 text-sm text-slate-500 dark:text-slate-400 pb-2">Use keywords found within the novel's summary description.</p>
-                <!-- FIX: Removed all internal spacing from collapse-content and moved it to an inner wrapper -->
                 <div id="summary-content" class="collapse-content">
                     <div class="px-4 pb-4">
-                        <input type="text" placeholder="Enter summary keywords..."
+                        <input type="text" id="summary-input" placeholder="Enter summary keywords..."
                                class="w-full p-3 border border-slate-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 rounded-lg focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
                         >
                     </div>
                 </div>
             </div>
 
-            <!-- 3. Popular Genres Dropdown (Include/Exclude Buttons) -->
             <div class="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md overflow-hidden">
                 <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-600 transition duration-150"
                         onclick="toggleCollapse('genres-content', 'genres-icon')">
                     Popular Genres
-                    <!-- Icon: Plus/Minus -->
                     <span id="genres-icon" class="text-2xl text-indigo-600 transition-transform duration-300 transform rotate-0">+</span>
                 </button>
                 <p class="px-4 text-sm text-slate-500 dark:text-slate-400 pb-2">Click to cycle through: **Neutral (default)** &rarr; **Include (green)** &rarr; **Exclude (red)**.</p>
-                <!-- FIX: Removed all internal spacing from collapse-content and moved it to an inner wrapper -->
                 <div id="genres-content" class="collapse-content">
                     <div class="px-4 pb-4">
                         <div id="genre-buttons" class="flex flex-wrap gap-2">
-                            <!-- Genre Buttons will be injected here by JS -->
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 4. Niche Tags Dropdown (Include/Exclude Buttons) -->
             <div class="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md overflow-hidden">
                 <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-600 transition duration-150"
                         onclick="toggleCollapse('tags-content', 'tags-icon')">
                     Niche Tags
-                    <!-- Icon: Plus/Minus -->
                     <span id="tags-icon" class="text-2xl text-indigo-600 transition-transform duration-300 transform rotate-0">+</span>
                 </button>
                 <p class="px-4 text-sm text-slate-500 dark:text-slate-400 pb-2">Refine your search with specific, detailed tags. Use the same Include/Exclude logic.</p>
-                <!-- FIX: Removed all internal spacing from collapse-content and moved it to an inner wrapper -->
                 <div id="tags-content" class="collapse-content">
                     <div class="px-4 pb-4">
                         <div id="tag-buttons" class="flex flex-wrap gap-2 mb-3">
-                            <!-- Tag Buttons will be injected here by JS -->
-                        </div>
-                        <!-- ADDED: Add Custom Tag Button -->
+                            </div>
                         <button id="add-tag-btn" class="w-full p-3 border border-dashed border-indigo-400 text-indigo-600 dark:text-indigo-400 dark:border-indigo-600 hover:bg-indigo-50 dark:hover:bg-slate-700 rounded-lg transition duration-150 flex items-center justify-center" onclick="handleAddCustomTag()">
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                             Add Custom Tag
@@ -155,28 +131,22 @@
                 </div>
             </div>
 
-            <!-- 5. Fandoms Dropdown -->
             <div class="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md overflow-hidden">
                 <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-600 transition duration-150"
                         onclick="toggleCollapse('fandoms-content', 'fandoms-icon')">
                     Fandoms
-                    <!-- Icon: Plus/Minus -->
                     <span id="fandoms-icon" class="text-2xl text-indigo-600 transition-transform duration-300 transform rotate-0">+</span>
                 </button>
                 <p class="px-4 text-sm text-slate-500 dark:text-slate-400 pb-2">Filter results related to specific popular fictional universes (shows, movies, comics, etc.).</p>
                 <div id="fandoms-content" class="collapse-content">
                     <div class="px-4 pb-4">
-                        <!-- Search Input -->
                         <input type="text" id="fandom-search" placeholder="Quick find a fandom..."
                                class="w-full p-3 mb-3 border border-slate-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 rounded-lg focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
                         >
                         
-                        <!-- Fandom Buttons -->
                         <div id="fandom-buttons" class="flex flex-wrap gap-2 mb-3">
-                            <!-- Fandom Buttons will be injected here by JS -->
-                        </div>
+                            </div>
 
-                        <!-- Add Custom Fandom Button -->
                         <button id="add-fandom-btn" class="w-full p-3 border border-dashed border-indigo-400 text-indigo-600 dark:text-indigo-400 dark:border-indigo-600 hover:bg-indigo-50 dark:hover:bg-slate-700 rounded-lg transition duration-150 flex items-center justify-center" onclick="handleAddCustomFandom()">
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
                             Add Custom Fandom
@@ -186,21 +156,17 @@
                 </div>
             </div>
             
-            <!-- 6. Sorting Options Dropdown -->
             <div class="bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md overflow-hidden">
                 <button class="w-full flex justify-between items-center p-4 text-left font-semibold text-lg text-slate-800 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-600 transition duration-150"
                         onclick="toggleCollapse('sorting-content', 'sorting-icon')">
                     Sorting Options
-                    <!-- Icon: Plus/Minus -->
                     <span id="sorting-icon" class="text-2xl text-indigo-600 transition-transform duration-300 transform rotate-0">+</span>
                 </button>
                 <p class="px-4 text-sm text-slate-500 dark:text-slate-400 pb-2">Choose the criteria and order for displaying your search results.</p>
-                <!-- FIX: Removed all internal spacing from collapse-content and moved it to an inner wrapper -->
                 <div id="sorting-content" class="collapse-content">
                     <div class="px-4 pb-4">
                         <div class="flex flex-col sm:flex-row gap-4">
                             
-                            <!-- Sort By Dropdown -->
                             <div class="sm:w-3/5">
                                 <label for="sort-by" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Sort By:</label>
                                 <select id="sort-by" class="w-full p-3 border border-slate-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition">
@@ -212,7 +178,6 @@
                                 </select>
                             </div>
 
-                            <!-- Order (Asc/Desc) Toggle Button Group -->
                             <div class="sm:w-2/5">
                                 <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Order:</label>
                                 <div id="order-toggle" class="flex rounded-lg border border-slate-300 dark:border-slate-600 overflow-hidden text-sm">
@@ -230,11 +195,9 @@
             </div>
             
         </div>
-        <!-- End of Collapsible Advanced Search Sections -->
-
-        <!-- Submit Button -->
         <div class="mt-8 text-center">
-            <button class="w-full md:w-auto px-8 py-3 bg-indigo-600 text-white font-bold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.01]">
+            <button class="w-full md:w-auto px-8 py-3 bg-indigo-600 text-white font-bold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.01]"
+                    onclick="executeSearch()">
                 <span class="inline-block align-middle mr-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </span>
@@ -264,8 +227,9 @@
             items.forEach(item => {
                 const button = document.createElement('button');
                 button.textContent = item;
-                button.dataset.state = '0'; 
+                button.dataset.state = '0'; // 0: Neutral, 1: Include, 2: Exclude
                 button.dataset.tagType = containerId; // e.g., 'genre-buttons', 'tag-buttons', 'fandom-buttons'
+                button.dataset.value = item; // Store the tag value for the search function
                 button.className = 'px-4 py-2 text-sm font-medium rounded-full transition duration-150 ease-in-out ' + getButtonClasses('0');
                 button.onclick = () => toggleTagState(button);
                 container.appendChild(button);
@@ -363,6 +327,88 @@
             clickedButton.classList.remove(...inactiveClasses);
             clickedButton.classList.add(...activeClasses);
         }
+        
+        // =================================================================
+        // CORE WORKFLOW: executeSearch() (Developed via LLM)
+        // This function collects all filters and generates the search query URL.
+        // =================================================================
+        function executeSearch() {
+            let queryParams = [];
+
+            // 1. Capture Text Inputs (Title, Author, Summary)
+            const title = document.getElementById('novel-title').value.trim();
+            const author = document.getElementById('author-input').value.trim();
+            const summary = document.getElementById('summary-input').value.trim();
+
+            if (title) queryParams.push(`title=${encodeURIComponent(title)}`);
+            if (author) queryParams.push(`author=${encodeURIComponent(author)}`);
+            if (summary) queryParams.push(`summary=${encodeURIComponent(summary)}`);
+
+            // 2. Capture Tag/Genre/Fandom Buttons (State 1: Include, State 2: Exclude)
+            const tagGroups = [
+                { selector: '#genre-buttons', param: 'genre' },
+                { selector: '#tag-buttons', param: 'tag' },
+                { selector: '#fandom-buttons', param: 'fandom' }
+            ];
+
+            tagGroups.forEach(group => {
+                // Find all buttons that are NOT in the neutral (0) state
+                const activeButtons = document.querySelector(group.selector)
+                    .querySelectorAll('button[data-state="1"], button[data-state="2"]');
+
+                if (activeButtons.length > 0) {
+                    const includeValues = [];
+                    const excludeValues = [];
+
+                    activeButtons.forEach(btn => {
+                        const value = btn.dataset.value;
+                        if (btn.dataset.state === '1') {
+                            includeValues.push(value); // State '1' is INCLUDE
+                        } else if (btn.dataset.state === '2') {
+                            excludeValues.push(value); // State '2' is EXCLUDE
+                        }
+                    });
+
+                    // Add Include parameters (e.g., genre=Fantasy,Romance)
+                    if (includeValues.length > 0) {
+                        queryParams.push(`${group.param}=${includeValues.map(encodeURIComponent).join(',')}`);
+                    }
+                    // Add Exclude parameters (e.g., exclude_tag=Harem)
+                    if (excludeValues.length > 0) {
+                        queryParams.push(`exclude_${group.param}=${excludeValues.map(encodeURIComponent).join(',')}`);
+                    }
+                }
+            });
+
+            // 3. Capture Sorting and Order
+            const sortBy = document.getElementById('sort-by').value;
+            const orderElement = document.querySelector('#order-toggle .bg-indigo-500, #order-toggle .dark\\:bg-indigo-600'); 
+            const order = orderElement ? orderElement.getAttribute('data-order') : 'asc'; // Default to asc if not found
+
+            queryParams.push(`sort_by=${sortBy}`);
+            queryParams.push(`order=${order}`);
+
+
+            // 4. Construct the Final URL
+            const baseUrl = 'search_results.html'; 
+            let finalUrl = baseUrl;
+            if (queryParams.length > 0) {
+                // Join all parameters with '&' and prepend with '?'
+                finalUrl += '?' + queryParams.join('&');
+            }
+
+            // 5. Output the result for the assignment demonstration
+            console.log("--- Advanced Search Executed ---");
+            console.log("Simulated Query URL:", finalUrl);
+            
+            // Display the final query URL to the user
+            alert("Simulated Search Result URL:\n\n" + finalUrl);
+
+            // In a live app, you would use:
+            // window.location.href = finalUrl;
+        }
+        // =================================================================
+
 
         // --- Initialization ---
 
