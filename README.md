@@ -37,8 +37,8 @@ All detailed documentation, planning, and analysis files are stored in the **`do
 
 | Document Name | File Path |
 | :--- | :--- |
-| **Subset One: Business Model** | [`docs/Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
-| **Subset Two: Product Management** | [`docs/Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
+| **Subset One: Business Model** | [`Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
+| **Subset Two: Product Management** | [`Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
 
 ---
 
