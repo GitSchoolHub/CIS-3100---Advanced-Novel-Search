@@ -12,15 +12,15 @@ The core solution is an advanced search interface and a defined business/product
 
 | Component | Description | Location in Repo |
 | :--- | :--- | :--- |
-| **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[See Live Demo](#live-demo-link)** |
-| **Business Model** | Analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
-| **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
+| **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[View Live UI/UX](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)** |
+| **Business Model** | Analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
+| **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
 
 ---
 
 ## 🔗 Live Demo Link (UI/UX Wireframe)
 
-You can view and interact with the deployed Advanced Novel Search Interface using either of the links below:
+You can view and interact with the deployed Advanced Novel Search Interface here:
 
 ### 1. Direct File Link (Recommended for Quick Access)
 
@@ -43,13 +43,12 @@ All detailed documentation, planning, and analysis files are stored in the **`do
 
 | Document Name | File Path |
 | :--- | :--- |
-| **Subset One: Business Model** | [`docs/Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
-| **Subset Two: Product Management** | [`docs/Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
+| **Subset One: Business Model** | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
+| **Subset Two: Product Management** | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
 
 ---
 
 ## 🛠️ Technology Stack
-
 * **Front-end:** HTML, JavaScript
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Used for the UI/UX Wireframe)
 * **Documentation:** PDF/Diagram Files (Conceptualized in this repository)
