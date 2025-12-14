@@ -1,59 +1,57 @@
-# 🔍 Advanced Novel Search Engine Finder Project
+# 📚 Advanced Novel Search Engine Finder 🔎
 
-## ✨ Project Overview
+### CIS-3100 Project Documentation
 
-This repository contains the full documentation and a working UI/UX wireframe for a proposed **Advanced Novel Search Engine Finder**. The project aims to solve the problem of poor book discoverability and inaccurate tagging systems prevalent across existing web novel and book cataloging sites, as detailed in the **Business Model**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Technology](https://img.shields.io/badge/Front--end-HTML%20%7C%20JS%20%7C%20Tailwind-blueviolet.svg)](https://tailwindcss.com/)
+[![Documentation](https://img.shields.io/badge/Documents-PDF%20%7C%20BPMN-green.svg)](./docs/)
 
-The core solution is an advanced search interface and a defined business/product strategy for implementing a comprehensive, structured tagging system.
+## ✨ Project Overview: Solving Novel Discoverability
+
+This project presents the full architectural plan, business strategy, and a working UI/UX wireframe for a comprehensive **Advanced Novel Search Engine Finder**. The core motivation is to combat the pervasive problem of inaccurate and unstructured tagging across major web novel platforms.
+
+The solution focuses on implementing an advanced, AI-powered, structured tagging system (conceptualized to use a service like Gemini) to dramatically improve book discovery for readers.
 
 ---
 
-## 🚀 Key Deliverables
+## 🚀 Key Project Deliverables
 
-| Component | Description | Location in Repo |
+| Category | Component | Description | File Path / Link |
+| :--- | :--- | :--- | :--- |
+| **User Interface** | **Live UI/UX Wireframe** | Interactive front-end design showcasing the advanced search functionality. | **[View Live UI/UX](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)** |
+| **Business Strategy** | **Business Model** | In-depth analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
+| **Product Planning** | **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
+
+---
+
+## 🌐 Deployment & Live Previews
+
+### 1. Front-End Interface (UI/UX)
+
+The main wireframe for the search engine, built using HTML, JavaScript, and Tailwind CSS.
+
+* **Primary Link (Recommended):**
+    👉 **[https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
+
+### 2. Firebase Development Environment
+
+This temporary link provides access to the live development environment for the conceptual application, often used for teacher review or real-time prototyping.
+
+* **Live App Preview (Temporary):**
+    🔥 `https://9000-firebase-studio-1761759525118.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev`
+    *(Note: This is a temporary cloud workstation URL and may require appropriate login or be subject to expiration.)*
+
+---
+
+## 🛠️ Technology Stack & Architecture
+
+| Layer | Technologies Used | Purpose in Project |
 | :--- | :--- | :--- |
-| **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[View Live UI/UX](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)** |
-| **Firebase Preview** | Live deployment of the conceptual application, hosted on a temporary Firebase/Cloud Workstation link. | See section below: **Technical Previews** |
-| **Business Model** | Analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
-| **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
+| **Front-end** | HTML, JavaScript, **Tailwind CSS** | Clean, responsive UI for the wireframe. |
+| **Cloud/Backend** | **Firebase** | Conceptual hosting, user authentication, and data management framework. |
+| **Conceptual AI** | Gemini API (Proposed) | The engine for generating structured, high-quality novel tags. |
+| **Documentation** | PDF, BPMN, Activity Diagrams | Detailed project planning and organizational analysis. |
 
 ---
 
-## 🔗 Live Demos and Technical Previews
-
-### 1. UI/UX Wireframe (Front-End Design)
-
-This is the interactive front-end design, showing the proposed search interface.
-
-👉 **[https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
-
-### 2. Live Firebase Deployment (Backend/App Preview)
-
-This link provides a live, pre-release view of the application or core Firebase components being demonstrated.
-
-🔥 **Firebase Preview Link:**
-**`https://9000-firebase-studio-1761759525118.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev`**
-*(Note: This is a temporary environment link and may require appropriate access or be subject to expiration.)*
-
-The source code for the static UI is located in the [`src/`](./src) folder.
-
----
-
-## 📚 Project Documentation and Analysis
-
-All detailed documentation, planning, and analysis files are stored in the **`docs/`** directory for easy review.
-
-### 📑 Document Access
-
-| Document Name | File Path |
-| :--- | :--- |
-| **Subset One: Business Model** | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
-| **Subset Two: Product Management** | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
-
----
-
-## 🛠️ Technology Stack
-* **Cloud Platform:** Firebase
-* **Front-end:** HTML, JavaScript
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Used for the UI/UX Wireframe)
-* **Documentation:** PDF/Diagram Files (Conceptualized in this repository)
+## 📂 Repository Structure
