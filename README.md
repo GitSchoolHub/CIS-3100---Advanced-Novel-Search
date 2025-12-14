@@ -12,7 +12,7 @@ The core solution is an advanced search interface and a defined business/product
 
 | Component | Description | Location in Repo |
 | :--- | :--- | :--- |
-| **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[See Live Demo](#live-demo-link)** |
+| **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[See Live Demo](**live-demo-link**)** |
 | **Business Model** | Analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
 | **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
 
