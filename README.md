@@ -13,25 +13,29 @@ The core solution is an advanced search interface and a defined business/product
 | Component | Description | Location in Repo |
 | :--- | :--- | :--- |
 | **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[View Live UI/UX](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)** |
+| **Firebase Preview** | Live deployment of the conceptual application, hosted on a temporary Firebase/Cloud Workstation link. | See section below: **Technical Previews** |
 | **Business Model** | Analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
 | **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
 
 ---
 
-## 🔗 Live Demo Link (UI/UX Wireframe)
+## 🔗 Live Demos and Technical Previews
 
-You can view and interact with the deployed Advanced Novel Search Interface here:
+### 1. UI/UX Wireframe (Front-End Design)
 
-### 1. Direct File Link (Recommended for Quick Access)
+This is the interactive front-end design, showing the proposed search interface.
 
 👉 **[https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
 
-### 2. Base URL (Uses Root Redirect)
+### 2. Live Firebase Deployment (Backend/App Preview)
 
-👉 **[https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/)**
-*(This link uses the root-level `index.html` to automatically redirect to the file in the `src/` folder.)*
+This link provides a live, pre-release view of the application or core Firebase components being demonstrated.
 
-The source code for this interface is located in the [`src/`](./src) folder.
+🔥 **Firebase Preview Link:**
+**`https://9000-firebase-studio-1761759525118.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev`**
+*(Note: This is a temporary environment link and may require appropriate access or be subject to expiration.)*
+
+The source code for the static UI is located in the [`src/`](./src) folder.
 
 ---
 
@@ -49,6 +53,7 @@ All detailed documentation, planning, and analysis files are stored in the **`do
 ---
 
 ## 🛠️ Technology Stack
+* **Cloud Platform:** Firebase
 * **Front-end:** HTML, JavaScript
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Used for the UI/UX Wireframe)
 * **Documentation:** PDF/Diagram Files (Conceptualized in this repository)
