@@ -19,6 +19,7 @@ The solution focuses on implementing an advanced, AI-powered, structured tagging
 | Category | Component | Description | File Path / Link |
 | :--- | :--- | :--- | :--- |
 | **User Interface** | **Live UI/UX Wireframe** | Interactive front-end design showcasing the advanced search functionality. | **[View Live UI/UX](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)** |
+| **Deployment Preview** | **Firebase Live Preview** | Temporary live environment showing the conceptual application or core Firebase components. | See section below: **Deployment & Live Previews** |
 | **Business Strategy** | **Business Model** | In-depth analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
 | **Product Planning** | **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
 
@@ -31,14 +32,14 @@ The solution focuses on implementing an advanced, AI-powered, structured tagging
 The main wireframe for the search engine, built using HTML, JavaScript, and Tailwind CSS.
 
 * **Primary Link (Recommended):**
-    👉 **[https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
+    👉 **[View UI/UX Wireframe](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
 
 ### 2. Firebase Development Environment
 
-This temporary link provides access to the live development environment for the conceptual application, often used for teacher review or real-time prototyping.
+This link provides access to the live development environment for the conceptual application, often used for teacher review or real-time prototyping.
 
 * **Live App Preview (Temporary):**
-    🔥 `https://9000-firebase-studio-1761759525118.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev`
+    🔥 **[Click to Open Firebase Studio](https://9000-firebase-studio-1761759525118.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev)**
     *(Note: This is a temporary cloud workstation URL and may require appropriate login or be subject to expiration.)*
 
 ---
