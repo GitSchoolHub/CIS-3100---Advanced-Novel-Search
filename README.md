@@ -19,9 +19,11 @@ The solution focuses on implementing an advanced, AI-powered, structured tagging
 | Category | Component | Description | File Path / Link |
 | :--- | :--- | :--- | :--- |
 | **User Interface** | **Live UI/UX Wireframe** | Interactive front-end design showcasing the advanced search functionality. | **[View Live UI/UX](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)** |
-| **Deployment Preview** | **Firebase Live Preview** | Temporary live environment showing the conceptual application or core Firebase components. | See section below: **Deployment & Live Previews** |
-| **Business Strategy** | **Business Model** | In-depth analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
-| **Product Planning** | **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
+| **Video Demo** | **Overview Video** | A complete video demonstration of the project, including the UI/UX. | **[Watch Demo Video (Google Drive)](https://drive.google.com/file/d/1oXwIROg6Fp5kdnCuVWiqA29likO8Y9Zf/view?usp=sharing)** |
+| **Business Strategy** | **Subset One: Business Model** | In-depth analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One_ Business Model.pdf`](./docs/Subset One_ Business Model.pdf) |
+| **Product Planning** | **Subset Two: Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two_ Product Management.pdf`](./docs/Subset Two_ Product Management.pdf) |
+| **Software Dev** | **Subset Three: Software Development** | Documentation of the core workflow development and architectural decisions. | [`docs/Subset Three_ Software Development.pdf`](./docs/Subset Three_ Software Development.pdf) |
+| **AI & Team** | **Subset Four: AI & Team Collaboration** | Final product overview, AI integration plan, and team collaboration summary. | [`docs/Subset Four_ AI Product Development _ Team Collaboration.pdf`](./docs/Subset Four_ AI Product Development _ Team Collaboration.pdf) |
 
 ---
 
@@ -32,15 +34,24 @@ The solution focuses on implementing an advanced, AI-powered, structured tagging
 The main wireframe for the search engine, built using HTML, JavaScript, and Tailwind CSS.
 
 * **Primary Link (Recommended):**
-    👉 **[View UI/UX Wireframe](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
+    👉 **[View UI/UX Wireframe](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
 
 ### 2. Firebase Development Environment
 
-This link provides access to the live development environment for the conceptual application, often used for teacher review or real-time prototyping.
+This link provides access to the live development environment for prototyping.
 
-* **Live App Preview (Temporary):**
-    🔥 **[Click to Open Firebase Studio](https://9000-firebase-studio-1761759525118.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev)**
-    *(Note: This is a temporary cloud workstation URL and may require appropriate login or be subject to expiration.)*
+* **Development Environment (Temporary Access):**
+    🔥 **[Click to Open Firebase Studio](https://9000-firebase-studio-1761759525118.cluster-pb4ljhlmg5hqsxnzpc56r3prxw.cloudworkstations.dev)**
+    *(Note: This is a temporary cloud workstation URL and may require appropriate login or be subject to expiration. The final permanent deployment link is pending.)*
+
+---
+
+## 🎥 Video Demonstration & Slides
+
+* **Overview Video (MP4):**
+  [Watch the Product Demo Video (Google Drive)](https://drive.google.com/file/d/1oXwIROg6Fp5kdnCuVWiqA29likO8Y9Zf/view?usp=sharing)
+* **Overview Slides/Deck:**
+  [View Project Overview Presentation](https://docs.google.com/presentation/d/1hFLSH7wbF0HJJ9VlSWB6d_4mT2b1Z9Wcw_PemRRD7LU/edit?usp=sharing)
 
 ---
 
