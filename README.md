@@ -2,7 +2,7 @@
 
 ## ✨ Project Overview
 
-This repository contains the full documentation and a working UI/UX wireframe for a proposed **Advanced Novel Search Engine Finder**. The project aims to solve the problem of poor book discoverability and inaccurate tagging systems prevalent across existing web novel and book cataloging sites.
+This repository contains the full documentation and a working UI/UX wireframe for a proposed **Advanced Novel Search Engine Finder**. The project aims to solve the problem of poor book discoverability and inaccurate tagging systems prevalent across existing web novel and book cataloging sites, as detailed in the **Business Model**.
 
 The core solution is an advanced search interface and a defined business/product strategy for implementing a comprehensive, structured tagging system.
 
@@ -12,7 +12,7 @@ The core solution is an advanced search interface and a defined business/product
 
 | Component | Description | Location in Repo |
 | :--- | :--- | :--- |
-| **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[See Live Demo](**live-demo-link**)** |
+| **UI/UX Wireframe** | The live, interactive user interface for the advanced search functionality. | **[See Live Demo](#live-demo-link)** |
 | **Business Model** | Analysis covering inherent motivations, deficiency analysis, and critical success factors. | [`docs/Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
 | **Product Management** | Organizational charts, Business Process Model Notation (BPMN), and Activity Diagrams. | [`docs/Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
 
@@ -20,10 +20,16 @@ The core solution is an advanced search interface and a defined business/product
 
 ## 🔗 Live Demo Link (UI/UX Wireframe)
 
-You can view and interact with the deployed Advanced Novel Search Interface here:
+You can view and interact with the deployed Advanced Novel Search Interface using either of the links below:
 
-👉 **[Live UI/UX Wireframe Link]**
-*(Replace this text with your actual GitHub Pages or hosting link)*
+### 1. Direct File Link (Recommended for Quick Access)
+
+👉 **[https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/src/index.html)**
+
+### 2. Base URL (Uses Root Redirect)
+
+👉 **[https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/](https://gitschoolhub.github.io/CIS-3100---Advanced-Novel-Search/)**
+*(This link uses the root-level `index.html` to automatically redirect to the file in the `src/` folder.)*
 
 The source code for this interface is located in the [`src/`](./src) folder.
 
@@ -37,8 +43,8 @@ All detailed documentation, planning, and analysis files are stored in the **`do
 
 | Document Name | File Path |
 | :--- | :--- |
-| **Subset One: Business Model** | [`Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
-| **Subset Two: Product Management** | [`Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
+| **Subset One: Business Model** | [`docs/Subset One: Business Model.pdf`](./docs/Subset One: Business Model.pdf) |
+| **Subset Two: Product Management** | [`docs/Subset Two: Product Management.pdf`](./docs/Subset Two: Product Management.pdf) |
 
 ---
 
@@ -47,7 +53,3 @@ All detailed documentation, planning, and analysis files are stored in the **`do
 * **Front-end:** HTML, JavaScript
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/) (Used for the UI/UX Wireframe)
 * **Documentation:** PDF/Diagram Files (Conceptualized in this repository)
-
----
-
-*(Optional: Add your name and course information at the bottom.)*
